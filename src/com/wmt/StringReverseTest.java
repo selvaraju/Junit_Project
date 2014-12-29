@@ -23,7 +23,8 @@ public class StringReverseTest {
 		Assert.assertNotEquals("StringReverse Not Equal", "SELVA", stringReverse.reverse("SELVA"));
 	}
 	
-	@Test(expected= StringIndexOutOfBoundsException.class) 
+	@Test(expected= StringIndexOutOfBoundsException.class) // For more info : https://github.com/junit-team/junit/wiki/Exception-testing
+	
 	public void equalsEmptyTest() {
 		Assert.assertEquals("StringReverse Equal Empty", "", stringReverse.reverse(""));
 	}
